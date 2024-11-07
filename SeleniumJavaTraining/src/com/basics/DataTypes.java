@@ -4,6 +4,7 @@ public class DataTypes {
 
 	public static void main(String[] args) {
 		// Primitive (important) data types
+		System.out.println("The below are the primitive data types in java");
 		byte b=109;
 		short s=1242;
 		int i=53455;
