@@ -3,7 +3,7 @@ package com.basics;
 public class DataTypes {
 
 	public static void main(String[] args) {
-		// Primitive (important) data types
+		// Primitive data types
 		System.out.println("The below are the primitive data types in java");
 		byte b=109;
 		short s=1242;
@@ -21,5 +21,22 @@ public class DataTypes {
 		System.out.println("Double value is : " + d);
 		System.out.println("Boolean value is : " + bFlag);
 		System.out.println("Char value is : " + c);
+		
+		byte b1=126;
+		int i1=b1; // Widening Type casting/Implicit Type casting :Converting smaller data type to larger type (byte -> short -> char -> int -> long -> float -> double)
+		System.out.println(b1 + " " + i1);
+		
+		int i2 = 129;
+		byte b2=(byte)i2; // Narrowing Type casting/Explicit Type casting :Converting bigger data type to smaller type (double -> float -> long -> int -> char -> short -> byte)
+		System.out.println(i2 + " " + b2);
+		
+		// Non Primitive types
+		String str = "hello";
+		System.out.println(str);
+		System.out.println("Length of the given string is : " + str.length());
+		System.out.println("Length of the given string is :".concat(" ") + str.length());
+		
+		
+		
 	}
 }
