@@ -5,6 +5,7 @@ public class A {
 	// Instance variables
 	int a=10;
 	int b=20;
+	private int e=40;
 	
 	// static/global variables
 	static int x=100;
