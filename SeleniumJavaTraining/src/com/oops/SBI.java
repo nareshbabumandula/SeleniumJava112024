@@ -10,6 +10,8 @@ public class SBI implements RBI, Bank{
 		sbi.setWithdrwalLimit();
 		sbi.setKYC();
 		sbi.loans();
+		sbi.branches();
+		RBI.dematAccount();
 		//sbi.minDeposit=1000; // The final field RBI.minDeposit cannot be assigned
 		System.out.println(sbi.minDeposit);
 	}

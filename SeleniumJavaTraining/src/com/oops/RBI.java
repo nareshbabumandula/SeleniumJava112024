@@ -21,6 +21,15 @@ interface RBI {
 	void setWithdrwalLimit();
 	void displayGuidelines();
 	void setKYC();
+	
+	static void dematAccount() {
+		System.out.println("Demat account facility is available");
+	}
+	
+	default void branches() {
+		System.out.println("Bank can have multiple branches");
+	}
+	
 
 }
 
