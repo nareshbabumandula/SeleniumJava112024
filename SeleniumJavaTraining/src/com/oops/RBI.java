@@ -10,10 +10,13 @@ package com.oops;
  * 5. To achieve 100% abstraction we can go for an interface
  * 6. We can extend multiple interfaces from one interface
  * 7. By default all the methods are public, abstract and final in an interface
+ * 8. Variables defined in an interface are treated like constants which can't be modified
  * 
  */
 interface RBI {
-
+	
+	double minDeposit=100;
+	
 	void setInterestRate();
 	void setWithdrwalLimit();
 	void displayGuidelines();

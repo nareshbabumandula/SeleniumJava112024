@@ -2,6 +2,7 @@ package com.oops;
 
 public class SBI implements RBI, Bank{
 	
+		
 	public static void main(String[] args) {
 		SBI sbi = new SBI();
 		sbi.setInterestRate();
@@ -9,6 +10,8 @@ public class SBI implements RBI, Bank{
 		sbi.setWithdrwalLimit();
 		sbi.setKYC();
 		sbi.loans();
+		//sbi.minDeposit=1000; // The final field RBI.minDeposit cannot be assigned
+		System.out.println(sbi.minDeposit);
 	}
 
 	@Override
