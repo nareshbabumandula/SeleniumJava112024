@@ -11,7 +11,10 @@ public class ArraysTest {
 		System.out.println(names[3]);
 		System.out.println(names[4]);
 		System.out.println(names[5]);
-		
+		System.out.println("Length of the names array is : " + names.length);
+		names[6]="Sai";
+		System.out.println(names[6]); // Cannot increase the length of an array. java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 6
+	
 		System.out.println("Printing all elements of an array via for loop");
 		for (int i = 0; i < names.length; i++) {
 			System.out.println(names[i]);
