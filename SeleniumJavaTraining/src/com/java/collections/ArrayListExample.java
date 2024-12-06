@@ -13,7 +13,7 @@ public class ArrayListExample {
 		alist.add("Aarthi");
 		alist.add("Preethi");
 		alist.add("Sai");
-		alist.add("Narmada");
+		alist.add("Shravan");
 		alist.add("Naresh");
 		alist.add("Sowjanya");
 		alist.remove(0);
