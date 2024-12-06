@@ -10,8 +10,10 @@ public class ArrayListExample {
 		// Create an object for ArrayList class
 		ArrayList<String> alist = new ArrayList<>();
 		alist.add("Sowjanya");
+		alist.add("Aarthi");
 		alist.add("Preethi");
 		alist.add("Sai");
+		alist.add("Shravan");
 		alist.add("Naresh");
 		alist.add("Sowjanya");
 		alist.add("Ravi");
