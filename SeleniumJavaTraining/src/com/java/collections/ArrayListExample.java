@@ -12,10 +12,11 @@ public class ArrayListExample {
 		alist.add("Sowjanya");
 		alist.add("Aarthi");
 		alist.add("Preethi");
-		alist.add("Sai");
-		alist.add("Narmada");
+		alist.add("Sathya");
+		alist.add("Shravan");
 		alist.add("Naresh");
 		alist.add("Sowjanya");
+		alist.add("Ravi Kiran");
 		alist.remove(0);
 		alist.add(0, "Ramya");
 		System.out.println(alist);
