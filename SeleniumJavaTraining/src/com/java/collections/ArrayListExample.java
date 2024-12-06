@@ -14,6 +14,7 @@ public class ArrayListExample {
 		alist.add("Sai");
 		alist.add("Naresh");
 		alist.add("Sowjanya");
+		alist.add("Ravi");
 		alist.remove(0);
 		alist.add(0, "Ramya");
 		System.out.println(alist);
