@@ -16,8 +16,10 @@ public class HashSetTest {
 
         s1.add("Ramya");
         s1.add("Seerath");
+        s1.add("Ramya");
         s1.add(null);
         s1.add(null);
+        System.out.println(s1);
 
         HashSet<String> set = new HashSet<String>();
         set.add("ravi");
@@ -25,7 +27,6 @@ public class HashSetTest {
         set.add("teju");
         set.add("ravi");
         set.addAll(s1);
-
 
         Iterator<String> iter = set.iterator();
         while(iter.hasNext()){

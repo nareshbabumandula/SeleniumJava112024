@@ -3,7 +3,15 @@ package com.java.collections;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
+/**
+ * 1. The ArrayList class implements the List interface. 
+ * 2. It uses a dynamic array to store the duplicate element of different data types. 
+ * 3. The ArrayList class maintains the insertion order and is non-synchronized. 
+ * 4. The elements stored in the ArrayList class can be randomly accessed. 
+ * 5. It allows duplicate elements
+ * @author ADMIN
+ *
+ */
 public class ArrayListExample {
 
 	public static void main(String[] args) {
