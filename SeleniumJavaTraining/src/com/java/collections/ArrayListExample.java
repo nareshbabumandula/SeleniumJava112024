@@ -65,6 +65,7 @@ public class ArrayListExample {
 		System.out.println("Looping through the collection via lambda after merging both the collections");
 		alist.forEach(employee->System.out.println(employee));
 		
+		ArrayList<String> arrList = new ArrayList<>();
 		List<String> arList = new ArrayList<>(); //Upcasting: Converting the sub type to its immediate super type.After up casting we can access only the unique methods of parent class and overridden methods of child class
 
 	}

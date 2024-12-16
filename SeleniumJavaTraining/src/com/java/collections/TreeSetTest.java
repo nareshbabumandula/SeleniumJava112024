@@ -21,6 +21,8 @@ public class TreeSetTest {
         set.add("teju");
         set.add("ravi");
         set.add("Anil");
+        
+        System.out.println(set);
 
         Iterator<String> iter = set.iterator();
         while(iter.hasNext()){
