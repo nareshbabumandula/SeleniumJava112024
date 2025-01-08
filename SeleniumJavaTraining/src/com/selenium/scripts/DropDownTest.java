@@ -26,10 +26,18 @@ public class DropDownTest {
 	
 	@Test 
     void dropdownMethods() throws InterruptedException{
-    	driver.findElement(By.linkText("Sample Forms")).click();
+		WebElement sampleForms = driver.findElement(By.linkText("Sample Forms"));
+		System.out.println(sampleForms.isDisplayed());
+		System.out.println(sampleForms.isEnabled());
+		sampleForms.click();
+		
+    	// When we execute driver.findElement(By.id("some id")), a WebElement object is created internally by the RemoteWebDriver class, which implements this interface.
     	WebElement predefinedCounrties = driver.findElement(By.id("q9"));
-        	
+
+    	// To work with a drop down list box we need to create an object for Select class explicitly. Since the there are methods like 
+    	// selectByIndex, selectByVisibleText, selectByValue etc are available inside the Select class.
     	Select country = new Select(predefinedCounrties);
+    	
     	country.selectByIndex(0);
     	Thread.sleep(1000);
     	country.selectByIndex(1);
@@ -45,6 +53,7 @@ public class DropDownTest {
       	List<WebElement> countries = country.getOptions();
       	System.out.println("No of pre-defined countries displayed in the dropdown are  : " + countries.size());
       	
+      	System.out.println("For loop to iterate through the drop down list..!");
     	for (int i = 0; i < countries.size(); i++) {
 			System.out.println(countries.get(i).getText());
 			
@@ -52,6 +61,11 @@ public class DropDownTest {
 				break;
 			}
 		}
+    	
+    	// Lambda Expression : Java Lambda Expression Syntax : (argument-list) -> {body}  
+    	System.out.println("Lambda expression to iterate through the drop down list..!");
+    	countries.forEach(name->System.out.println(name.getText()));
+    	
 	}
     
 	
@@ -62,7 +76,7 @@ public class DropDownTest {
 	 */
 	@AfterClass
     void closeBrowser() throws InterruptedException{
-    	Thread.sleep(3000);
+	   	Thread.sleep(3000);
 		driver.quit();
 	}
 
