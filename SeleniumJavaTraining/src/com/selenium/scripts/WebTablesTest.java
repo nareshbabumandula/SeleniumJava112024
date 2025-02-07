@@ -8,13 +8,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class WebTablesTest {
     WebDriver driver;
 
+    @Parameters({"last-name"})
 	@Test
-	public void handleWebTable() {
+	public void handleWebTable(String firstName) {
 		String mainWindow = driver.getWindowHandle();
 		System.out.println(mainWindow);
 		driver.get("https://the-internet.herokuapp.com/tables");
@@ -27,13 +29,13 @@ public class WebTablesTest {
 		List<WebElement> columns = table.findElements(By.xpath(".//thead/tr/th"));
 		System.out.println("No of columns are : " + columns.size());
 		
-		for (int i = 1; i < rows.size(); i++) {
-			for (int j = 1; j < columns.size(); j++) {
+		for (int i = 1; i <= rows.size(); i++) {
+			for (int j = 1; j <= columns.size(); j++) {
 				String value = table.findElement(By.xpath(".//tbody/tr[" + i + "]/td[" + j + "]")).getText();
 				System.out.print(value + " ");
-				if (value.equals("Doe")) {
+				if (value.equals(firstName)) {
 					String email = table.findElement(By.xpath(".//tbody/tr[" + i + "]/td[" + (j+4) + "]")).getText();
-					System.out.println("Email address of Doe is : " + email);
+					System.out.println("email address is : " + email);
 					break;
 				}
 			}
